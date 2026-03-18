@@ -1,0 +1,82 @@
+[
+  {
+    "query": "我本地 github 仓库目录里是不是已经有 GitNexus？如果有，先别联网，直接根据本地代码说说它是干什么的。",
+    "should_trigger": true
+  },
+  {
+    "query": "帮我把 https://github.com/astral-sh/uv.git 下载到我的 repo 目录，然后更新本地索引。",
+    "should_trigger": true
+  },
+  {
+    "query": "你看下 `cli/cli` 最近开着的 PR 主要都在改什么，如果我本地没有这个仓库就直接查 GitHub。",
+    "should_trigger": true
+  },
+  {
+    "query": "我记得之前下过一个叫 continue 的仓库，你先在本地 github 目录找找，再告诉我它大概是什么项目。",
+    "should_trigger": true
+  },
+  {
+    "query": "这个仓库 https://github.com/microsoft/typescript 看起来最近 release 很频繁，帮我查一下最新 release 和 main 分支大概情况。",
+    "should_trigger": true
+  },
+  {
+    "query": "想看看 OpenCode 相关 repo 里有没有跟 skill 机制有关的实现，优先从我本地仓库目录找，找不到再去 GitHub 搜。",
+    "should_trigger": true
+  },
+  {
+    "query": "帮我判断一下 `anthropics/claude-code` 这个写法是不是仓库名，如果是的话顺便看看本地有没有对应 repo。",
+    "should_trigger": true
+  },
+  {
+    "query": "我老板丢给我一个 GitHub 链接让我先做背景调研，你先别写代码，先根据仓库和 issue/PR 状态给我一个项目快照。链接是 https://github.com/vercel/next.js",
+    "should_trigger": true
+  },
+  {
+    "query": "下载一个跟 Godot demo 相关的 repo 到我本地 github 目录，下载完在索引里补一句话说明。",
+    "should_trigger": true
+  },
+  {
+    "query": "这个项目我只记得 README 里好像提到 MCP 和 knowledge graph，你先从本地 Github_kb 里匹配最像的仓库再回答。",
+    "should_trigger": true
+  },
+  {
+    "query": "git clone 和 git pull 区别是什么？给我一个最简单的解释就行。",
+    "should_trigger": false
+  },
+  {
+    "query": "帮我修一下这个本地 git merge 冲突，我不关心远程仓库信息，只想知道怎么选 ours 和 theirs。",
+    "should_trigger": false
+  },
+  {
+    "query": "我有个目录叫 repo_backup，里面是一些 zip 文件，帮我写个脚本整理一下名字。",
+    "should_trigger": false
+  },
+  {
+    "query": "解释一下什么是 pull request，顺便和 code review 的区别说清楚，但不用查任何具体仓库。",
+    "should_trigger": false
+  },
+  {
+    "query": "我在做一个仓库管理系统后台，想设计 repository 表和 issue 表的数据库 schema。",
+    "should_trigger": false
+  },
+  {
+    "query": "把我当前项目里的 `RepoService` 类重构一下，repo 在这里是 repository pattern，不是 GitHub 仓库。",
+    "should_trigger": false
+  },
+  {
+    "query": "帮我给 GitHub 风格的卡片列表做个前端页面，视觉上像仓库卡片就行，不需要访问任何 GitHub 数据。",
+    "should_trigger": false
+  },
+  {
+    "query": "我想知道 branch、tag、release 三者概念上有什么区别，先讲原理，不要去查具体项目。",
+    "should_trigger": false
+  },
+  {
+    "query": "给我写一个 curl 调用 GitHub API 的示例，我只是想学语法，不是在查某个仓库。",
+    "should_trigger": false
+  },
+  {
+    "query": "我的目录里有个文件名叫 AGENTS.md，帮我解释这个文件通常是干嘛的，不用看任何 GitHub repo。",
+    "should_trigger": false
+  }
+]

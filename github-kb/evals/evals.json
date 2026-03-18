@@ -1,0 +1,23 @@
+{
+  "skill_name": "github-kb",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我看看 `repo` 目录里有没有跟 Godot 学习相关的仓库，如果有先用本地内容总结一下。",
+      "expected_output": "优先读取本地 Github_kb 和 AGENTS.md，若无匹配则说明当前本地为空或未找到。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "帮我下载 `godotengine/godot-demo-projects` 到本地 github 仓库目录，然后更新索引。",
+      "expected_output": "使用 git clone 到 C:\\Projects\\Github_kb，并在完成后更新 AGENTS.md。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "帮我查一下 `cli/cli` 最近有哪些 open PR，如果本地没有就直接走 GitHub 查询。",
+      "expected_output": "先检查本地索引，再优先使用 gh；若 gh 不可用或未登录，退化为 curl。",
+      "files": []
+    }
+  ]
+}
