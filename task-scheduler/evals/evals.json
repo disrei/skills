@@ -1,0 +1,23 @@
+{
+  "skill_name": "task-scheduler",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "每周一早上帮我归纳一下周日的科技新闻，保存到 C:\\Users\\LZhang4\\reports\\weekly-news.md",
+      "expected_output": "创建了 weekly-news-summary.md（或类似 id），更新了 summary.md，并给出注册 Task Scheduler 所需的 PowerShell 命令",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "把新闻归纳那个任务改成每周一早上 7 点",
+      "expected_output": "更新了对应 task.md 的 schedule 字段为 /ST 07:00，更新了 summary.md，并给出重新注册的 PowerShell 命令",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "把新闻归纳的定时任务删掉吧",
+      "expected_output": "删除了对应 task.md，从 summary.md 移除了该行，并给出 Unregister-ScheduledTask 命令",
+      "files": []
+    }
+  ]
+}
